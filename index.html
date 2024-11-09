@@ -29,61 +29,37 @@
   </head>
   <body>
     <!-----------------------header-------------------------------------------->
-
     <header id="header" class="header">
-      <a href="index.html">
-        <img src="images/logo.png" class="logo" alt="logo" />
-      </a>
-
-      <div class="search--box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="search" id="search-bar" />
-      </div>
-
-      <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="log-icon">
-          <a href="login.html"
-            ><i id="lg-login" class="fas fa-user-plus"></i
-          ></a>
-        </li>
-        <li class="cart-icon">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span>0</span>
-        </li>
-      </ul>
-
-      <!-------------------Cart sidebar section--------------------->
-
-      <div class="sidebar" id="sidebar">
-        <div class="sidebar-close">
-          <i class="fa-solid fa-close"></i>
-        </div>
-
-        <div class="cart-menu">
-          <h3>My cart</h3>
-          <div class="cart-items"></div>
-        </div>
-
-        <div class="sidebar--footer">
-          <div class="total--amount">
-            <h5>Total</h5>
-            <div class="cart-total">$0.00</div>
-          </div>
-          <button class="checkout-btn">Checkout</button>
-        </div>
-        <div class="burger--icon">
+      <nav class="header--menu">
+        <div class="burger--icon bar">
           <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div id="mobile">
-          <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
-          <a href="login.html"><i class="fas fa-user-plus"></i></a>
-          <i id="bar" class="fas fa-outdent"></i>
-          <a href="#" id="close"><i class="fas fa-times"></i></a>
+        <div>
+          <img class="logo" src="images/logo.png" alt="" />
         </div>
-      </div>
+
+        <div class="search--box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search" id="search-bar" />
+        </div>
+
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="log-icon">
+          <a href="login.html"
+            ><i id="lg-login" class="fas fa-user-plus"></i
+          ></a>
+        </div>
+
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
@@ -94,35 +70,36 @@
           <span class="slogan">Where taste takes the fast lane</span>
         </div>
       </section>
+
       <main>
         <h2 class="section-heading">Food Menu</h2>
         <div class="menu--list">
-          <div class="menu--item">
-            <img src="images/food-products/starter.png" alt="" />
+          <div class="menu--item starters">
+            <img src="images/food-products/starter.jpg" alt="" />
             <h5>Starters</h5>
           </div>
 
-          <div class="menu--item">
+          <div class="menu--item burgers">
             <img src="images/food-products/burgers.jpeg" alt="" />
             <h5>Burgers</h5>
           </div>
 
-          <div class="menu--item">
+          <div class="menu--item pizza">
             <img src="images/food-products/food3.jpg" alt="" />
             <h5>Pizza</h5>
           </div>
 
-          <div class="menu--item">
-            <img src="images/food-products/main-course.png" alt="" />
+          <div class="menu--item maincourse">
+            <img src="images/food-products/maincourse.png" alt="" />
             <h5>Main</h5>
           </div>
 
-          <div class="menu--item">
+          <div class="menu--item drinks">
             <img src="images/food-products/drinks.jpeg" alt="" />
             <h5>Drinks</h5>
           </div>
 
-          <div class="menu--item">
+          <div class="menu--item coffee">
             <img src="images/food-products/coffee.jpg" alt="" />
             <h5>Coffee</h5>
           </div>
@@ -315,6 +292,7 @@
           </div>
         </div>
       </main>
+
       <section id="newsletters" class="section-p1 section-m1">
         <div class="newstext">
           <h4>Sign up for newsletters</h4>
@@ -328,6 +306,7 @@
           <button class="normal">Sign up</button>
         </div>
       </section>
+
       <footer class="section-p1">
         <div class="col">
           <a href="index.html"
@@ -354,7 +333,7 @@
           <a href="#">Delivery Information</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
-          <a href="#">Contact us</a>
+          <a href="contact.html">Contact us</a>
         </div>
         <div class="col">
           <h4>My account</h4>
@@ -379,6 +358,7 @@
         </div>
       </footer>
     </main>
+
     <!--Link custom Javascript-->
     <script src="script.js"></script>
   </body>
