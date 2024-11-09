@@ -205,3 +205,7 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc); // Add focus event listener
   input.addEventListener("blur", blurFunc); // Add blur event listener
 });
+
+/*****************************************************
+ * ***********************       Hamburger menu
+ ***************************************************** */
