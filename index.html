@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | CI-Discount</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==================== LINK SWIPERJS CSS ==================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ==================== LINK GOOGLE FONT ICON ==================================-->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- ==================== LINK FONT AWESOME ==================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-----------------------header-------------------------------------------->
+
+    <header id="header" class="header">
+      <a href="index.html">
+        <img src="images/logo.png" class="logo" alt="logo" />
+      </a>
+
+      <div class="search--box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="search" id="search-bar" />
+      </div>
+
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="log-icon">
+          <a href="login.html"
+            ><i id="lg-login" class="fas fa-user-plus"></i
+          ></a>
+        </li>
+        <li class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </li>
+      </ul>
+
+      <!-------------------Cart sidebar section--------------------->
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-close">
+          <i class="fa-solid fa-close"></i>
+        </div>
+
+        <div class="cart-menu">
+          <h3>My cart</h3>
+          <div class="cart-items"></div>
+        </div>
+
+        <div class="sidebar--footer">
+          <div class="total--amount">
+            <h5>Total</h5>
+            <div class="cart-total">$0.00</div>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+        <div class="burger--icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="mobile">
+          <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+          <a href="login.html"><i class="fas fa-user-plus"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+          <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--cover section-->
+      <section class="cover">
+        <div class="cover--overlay">
+          <h1>Quick bite</h1>
+          <span class="slogan">Where taste takes the fast lane</span>
+        </div>
+      </section>
+      <main>
+        <h2 class="section-heading">Food Menu</h2>
+        <div class="menu--list">
+          <div class="menu--item">
+            <img src="images/food-products/starter.png" alt="" />
+            <h5>Starters</h5>
+          </div>
+
+          <div class="menu--item">
+            <img src="images/food-products/burgers.jpeg" alt="" />
+            <h5>Burgers</h5>
+          </div>
+
+          <div class="menu--item">
+            <img src="images/food-products/food3.jpg" alt="" />
+            <h5>Pizza</h5>
+          </div>
+
+          <div class="menu--item">
+            <img src="images/food-products/main-course.png" alt="" />
+            <h5>Main</h5>
+          </div>
+
+          <div class="menu--item">
+            <img src="images/food-products/drinks.jpeg" alt="" />
+            <h5>Drinks</h5>
+          </div>
+
+          <div class="menu--item">
+            <img src="images/food-products/coffee.jpg" alt="" />
+            <h5>Coffee</h5>
+          </div>
+        </div>
+
+        <!--Card Item Selection-->
+        <h2 class="section-heading">Foods</h2>
+        <div class="card--list">
+          <div class="card">
+            <img src="images/food-products/rice.jpg" alt="" />
+            <h4 class="card-title">Rice</h4>
+
+            <div class="card--price">
+              <div class="price">$3.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/burgers.jpeg" alt="" />
+            <h4 class="card-title">Burger</h4>
+
+            <div class="card--price">
+              <div class="price">$2.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/food4.jpg" alt="" />
+            <h4 class="card-title">Pizza</h4>
+
+            <div class="card--price">
+              <div class="price">$5.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/chip.png" alt="" />
+            <h4 class="card-title">Chips</h4>
+
+            <div class="card--price">
+              <div class="price">$1.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/beefsteak.png" alt="" />
+            <h4 class="card-title">Beef</h4>
+
+            <div class="card--price">
+              <div class="price">$6.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/lamb.png" alt="" />
+            <h4 class="card-title">Lamb</h4>
+
+            <div class="card--price">
+              <div class="price">$7.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/pasta.png" alt="" />
+            <h4 class="card-title">Pasta</h4>
+
+            <div class="card--price">
+              <div class="price">$1.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/soup.png" alt="" />
+            <h4 class="card-title">Soup</h4>
+
+            <div class="card--price">
+              <div class="price">$3.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <!-- Additional card items would go here -->
+        </div>
+
+        <!-------------------- DRINKS ITEMS SECTION------------------->
+
+        <!--Drinks Card Item Selection-->
+        <h2 class="section-heading">Drinks</h2>
+        <div class="card--list">
+          <div class="card">
+            <img src="images/food-products/coca-cola.png" alt="" />
+            <h4 class="card-title">Cocacola</h4>
+
+            <div class="card--price">
+              <div class="price">$3.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/fanta.png" alt="" />
+            <h4 class="card-title">Fanta</h4>
+
+            <div class="card--price">
+              <div class="price">$2.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/tango.webp" alt="" />
+            <h4 class="card-title">Tango</h4>
+
+            <div class="card--price">
+              <div class="price">$5.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/Sprite-can.png" alt="" />
+            <h4 class="card-title">Sprite</h4>
+
+            <div class="card--price">
+              <div class="price">$1.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/7up.png" alt="" />
+            <h4 class="card-title">7up</h4>
+
+            <div class="card--price">
+              <div class="price">$6.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/milkshake.png" alt="" />
+            <h4 class="card-title">Milkshake</h4>
+
+            <div class="card--price">
+              <div class="price">$7.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/food-products/smoothie.webp" alt="" />
+            <h4 class="card-title">Smoothie</h4>
+
+            <div class="card--price">
+              <div class="price">$1.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/food-products/Red-Bull.png" alt="" />
+            <h4 class="card-title">Redbull</h4>
+
+            <div class="card--price">
+              <div class="price">$3.50</div>
+              <i class="fa-solid fa-plus add-to-cart"></i>
+            </div>
+          </div>
+
+          <!-- Additional card items would go here -->
+        </div>
+
+        <!-------------------Cart sidebar section--------------------->
+
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-close">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <div class="cart-menu">
+            <h3>My cart</h3>
+            <div class="cart-items"></div>
+          </div>
+          <div class="sidebar--footer">
+            <div class="total--amount">
+              <h5>Total</h5>
+              <div class="cart-total">$0.00</div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </main>
+      <section id="newsletters" class="section-p1 section-m1">
+        <div class="newstext">
+          <h4>Sign up for newsletters</h4>
+          <p>
+            Get E-mail updates about out latest shop and
+            <span>special offers</span>
+          </p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Your E-mail address" />
+          <button class="normal">Sign up</button>
+        </div>
+      </section>
+      <footer class="section-p1">
+        <div class="col">
+          <a href="index.html"
+            ><img src="images/logo.png" class="logo" alt="logo"
+          /></a>
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> United Kingdom London</p>
+          <p><strong>Phone:</strong> +447424242793</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00 Mon-Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About us</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+          <h4>My account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My wishlist</a>
+          <a href="#">Track my Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Download our App</h4>
+          <p>From AppStore or Google PlayStore</p>
+          <div class="row">
+            <img src="images/app.jpg" alt="" />
+            <img src="images/play.jpg" alt="" />
+          </div>
+          <p>Secured payment gateways</p>
+          <img src="assets/pay.png" alt="" />
+        </div>
+        <div class="copyright">
+          <p>Copyright © | 2024</p>
+        </div>
+      </footer>
+    </main>
+    <!--Link custom Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>
