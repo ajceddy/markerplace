@@ -4,7 +4,7 @@
   --primary-color: #088178;
   --decent-color: #d6e8bd;
   --accent-color: #fff;
-  --secondary-color: rgb(9, 189, 9);
+  --secondary-color: rgb(70, 196, 70);
   --font-family: "Poppins", sans-seri;
   --text-color: rgb(11, 11, 11);
 }
@@ -667,6 +667,10 @@ textarea.input {
   header .logo {
     display: none;
   }
+
+  main {
+    padding: 0% 2%;
+  }
   .logo {
     width: 60px;
     height: 60px;
@@ -691,6 +695,7 @@ textarea.input {
     padding: 80px 0 0 14px;
     transition: 0.3s ease;
   }
+
   #navbar.active {
     right: 0;
   }
@@ -716,40 +721,19 @@ textarea.input {
     font-size: 20px;
   }
 
-  #hero {
-    height: 70vh;
-    padding: 0 80px;
-    background-position: top 30% right 30%;
-  }
-  #feature {
+  .card-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
     justify-content: center;
   }
-  #feature .fe-box {
-    margin: 15px 15px;
+  .card {
+    height: 200px;
+    width: 128px;
   }
-  #product1 .pro-container {
-    justify-content: center;
-  }
-  #product1 .pro {
-    margin: 15px;
-  }
-
-  #banner {
-    height: 35vh;
-  }
-  #sm-banner .banner-box {
-    min-width: 100%;
-    height: 30vh;
-  }
-  #banner3 {
-    padding: 0px 40px;
-  }
-  #banner3 .banner-box {
-    width: 30%;
-  }
-
-  .form {
-    grid-template-columns: 1fr;
+  .card img {
+    height: 84px;
+    width: 84px;
   }
 
   .text {
@@ -769,6 +753,11 @@ textarea.input {
   #newsletters .form {
     display: flex;
     width: 80%;
+  }
+
+  /****** contact page *****/
+  .form {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -795,13 +784,6 @@ textarea.input {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .cover--overlay span {
-    font-size: 1rem;
-  }
-  .container {
-    padding: 1.5rem;
-  }
   .card {
     height: 200px;
     width: 128px;
@@ -811,8 +793,20 @@ textarea.input {
     width: 84px;
   }
 
+  .cover--overlay span {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
   form {
+    flex-direction: column;
     padding: 1.7rem 1.6rem;
+  }
+
+  form .input {
+    width: 100%;
   }
 
   .text,
