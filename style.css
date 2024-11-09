@@ -773,6 +773,9 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 0px;
+  }
   header .logo {
     display: none;
   }
@@ -782,12 +785,30 @@ textarea.input {
   .cover--overlay h1 {
     font-size: 2rem;
   }
+  main {
+    padding: 0% 2%;
+  }
+
+  .card-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .cover--overlay span {
     font-size: 1rem;
   }
   .container {
     padding: 1.5rem;
+  }
+  .card {
+    height: 200px;
+    width: 128px;
+  }
+  .card img {
+    height: 84px;
+    width: 84px;
   }
 
   form {
