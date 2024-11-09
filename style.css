@@ -28,7 +28,7 @@ body {
   background: #fff;
 }
 main {
-  padding: 0 5%;
+  padding: 0% 9%;
 }
 
 /****************************************************/
@@ -50,6 +50,7 @@ main {
 }
 
 .header--menu {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,8 +107,11 @@ main {
 /*****************************************************/
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  margin-right: 60px;
+  margin-left: 0;
+  margin-top: 10px;
 }
 .burger--icon i {
   padding: 10px;
@@ -117,6 +121,7 @@ main {
   cursor: pointer;
 }
 .search--box {
+  width: 60%;
   background: var(--accent-color);
   border-radius: 10px;
   flex: 1;
@@ -186,16 +191,24 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 30px;
   border-radius: 10px;
+}
+.cover--overlay h1 {
+  font-size: 3rem;
+}
+.cover--overlay span {
+  font-size: 1.5rem;
 }
 /*************** section heading *****************/
 
 .section-heading {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   margin: 1rem 0 10px 0;
   color: var(--text-color);
+  text-align: center;
+  padding: 20px 0px;
 }
 
 /*************** Menu list *****************/
@@ -243,7 +256,10 @@ main {
 .card img {
   width: 100%;
 }
-
+.maincourse img {
+  width: 85px;
+  height: 85px;
+}
 .card--price {
   display: flex;
   align-items: center;
@@ -366,6 +382,10 @@ main {
   display: flex;
   justify-content: center;
   justify-items: normal;
+}
+.card img {
+  width: 158px;
+  height: 158px;
 }
 
 .card-list .card-item .card-link {
@@ -637,55 +657,22 @@ textarea.input {
   transform: scale(1.05);
 }
 
+@media (min-width: 851px) {
+  .burger--icon {
+    display: none;
+  }
+}
+
 @media (max-width: 850px) {
-  .form {
-    grid-template-columns: 1fr;
+  header .logo {
+    display: none;
   }
-
-  .text {
-    margin: 1rem 0 1.5rem 0;
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 5px;
   }
-
-  .social-media {
-    padding: 1.5rem 0 0 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 1.5rem;
-  }
-
-  form {
-    padding: 1.7rem 1.6rem;
-  }
-
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 1.15rem;
-  }
-
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-
-  .btn {
-    padding: 0.45rem 1.2rem;
-  }
-}
-
-@media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
   }
@@ -707,6 +694,7 @@ textarea.input {
   #navbar.active {
     right: 0;
   }
+
   #navbar li {
     margin-bottom: 25px;
   }
@@ -759,9 +747,87 @@ textarea.input {
   #banner3 .banner-box {
     width: 30%;
   }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+  #newsletters input {
+    width: 100%;
+  }
+
+  #newsletters button {
+    width: 35%;
+  }
+  #newsletters .form {
+    display: flex;
+    width: 80%;
+  }
 }
 
-/****************** Newsletters*/
+@media (max-width: 480px) {
+  header .logo {
+    display: none;
+  }
+  #serach-bar input {
+    width: 90%;
+  }
+  .cover--overlay h1 {
+    font-size: 2rem;
+  }
+
+  .cover--overlay span {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
+  form {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+
+  #newsletters button {
+    width: 30%;
+  }
+  #newsletters .form {
+    display: flex;
+    width: 70%;
+  }
+}
+
+/****************** Newsletters*******************/
 
 #newsletters {
   display: flex;
@@ -810,7 +876,7 @@ textarea.input {
   white-space: nowrap;
   border-top-left-radius: 0%;
   border-bottom-left-radius: 0%;
-  width: 30%;
+  width: 35%;
 }
 #newsletters .form {
   display: flex;
