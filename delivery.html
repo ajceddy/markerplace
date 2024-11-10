@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy | Fast food</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==================== LINK SWIPERJS CSS ==================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ==================== LINK GOOGLE FONT ICON ==================================-->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- ==================== LINK FONT AWESOME ==================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-----------------------header-------------------------------------------->
+
+    <header id="header" class="header">
+      <nav class="header--menu">
+        <div class="burger--icon bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div>
+          <img class="logo" src="images/logo.png" alt="" />
+        </div>
+
+        <div class="search--box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search" id="search-bar" />
+        </div>
+
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="log-icon">
+          <a href="login.html"
+            ><i id="lg-login" class="fas fa-user-plus"></i
+          ></a>
+        </div>
+
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </div>
+      </nav>
+      <!--Cart Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-close">
+          <i class="fa-solid fa-close"></i>
+        </div>
+        <div class="cart-menu">
+          <h3>My cart</h3>
+          <div class="cart-items"></div>
+        </div>
+        <div class="sidebar--footer">
+          <div class="total--amount">
+            <h5>Total</h5>
+            <div class="cart-total">$0.00</div>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </header>
+
+    <!--Main section-->
+    <main class="main">
+      <!--Newsletter section-->
+      <section id="newsletters" class="section-p1 section-m1">
+        <div class="newstext">
+          <h4>Sign up for newsletters</h4>
+          <p>
+            Get E-mail updates about out latest shop and
+            <span>special offers</span>
+          </p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Your E-mail address" />
+          <button class="normal">Sign up</button>
+        </div>
+      </section>
+
+      <!--Delivery policy-->
+      <section class="delivery">
+        <div>
+          <h1 class="delivery-title">Delivery Information</h1>
+
+          <p>
+            Welcome to [Fast Food Online Shop]! We’re committed to delivering
+            fresh, delicious meals directly to your door. Below, you’ll find all
+            the information you need about our delivery services.
+          </p>
+          <h3>1. Delivery Areas</h3>
+          <p>We currently deliver to the following locations:</p>
+
+          <span>
+            [City 1] <br />
+            [City 2] <br />
+            [Neighborhoods/Suburbs] <br />
+            If your area isn’t listed, please contact us at
+            <br />[support@fastfoodonlineshop.com] to check if we can deliver to
+            your location. <br />
+          </span>
+          <h3>2. Delivery Hours</h3>
+          <p>
+            Our delivery service operates during the following hours:
+
+            <span> Weekdays: 10:00 AM - 10:00 PM</span>
+            <span>Weekends: 11:00 AM - 11:00 PM</span>
+            Please note that delivery times may vary during peak hours,
+            holidays, or due to unforeseen events like severe weather.
+          </p>
+          <h3>3. Delivery Fees</h3>
+          <p>
+            <span>Within 5 miles: $2.99</span>
+            <span>5-10 miles: $4.99</span>
+            <span>10-15 miles: $6.99</span>
+            Orders above $50 are eligible for free delivery within a 10-mile
+            radius. The delivery fee will be calculated automatically at
+            checkout based on your address.
+          </p>
+          <h3>4. Estimated Delivery Times</h3>
+          <p>
+            We aim to deliver your order as quickly as possible! Here are our
+            average delivery times: <span></span>Within 5 miles: 20-30 minutes
+            <span>5-10 miles: 30-45 minutes</span>
+            <span>10-15 miles: 45-60 minutes</span>
+            Please note that delivery times are estimates and may vary due to
+            traffic, high demand, or other conditions. We appreciate your
+            patience and understanding.
+          </p>
+          <h3>5. Order Tracking</h3>
+          <p>
+            Once you place an order, you’ll receive a confirmation email with a
+            tracking link. You can use this link to: Track the status of your
+            order in real time See estimated arrival times Receive updates on
+            your delivery For any issues or inquiries, feel free to reach out to
+            our customer support team at [support@fastfoodonlineshop.com] or
+            call us at [+123-456-7890].
+          </p>
+          <h3>6. Contact-Free Delivery</h3>
+          <p>
+            Your safety is important to us! We offer contact-free delivery
+            options: Contact-Free Drop-Off: Our delivery driver will place your
+            order at your door and notify you by phone or text.<br />
+            <br />
+            Special Instructions: Use the “Delivery Instructions” section at
+            checkout to provide any specific delivery requests.
+          </p>
+          <h3>7. Delivery Issues and Returns</h3>
+          <p>
+            If you experience any issues with your delivery, please let us know
+            within 24 hours:<br />
+            <br />
+
+            Incorrect or Missing Items: Contact us immediately to report any
+            issues, and we’ll work quickly to resolve them. Cold or Damaged
+            Food: While we strive to deliver your food hot and fresh, if there
+            are issues with quality, please contact us for a solution or a
+            potential refund.
+          </p>
+          <h3>8. Frequently Asked Questions (FAQs)</h3>
+          <p>
+            <strong>Q: Can I schedule a delivery for a later time? </strong>A:
+            Yes, we offer scheduled deliveries. You can select your preferred
+            time at checkout.<br />
+            <br />
+
+            <strong>Q: Do you deliver during holidays?</strong> A: Yes, we’re
+            open on most holidays but may operate on limited hours. Check our
+            website or contact us for holiday hours.<br />
+            <br />
+
+            <strong
+              >Q: Can I make changes to my order after it’s been placed?</strong
+            >
+            A: Please contact us as soon as possible if you need to make
+            changes. We’ll do our best to accommodate, but changes may not be
+            possible once the order is being prepared. <br />
+            <br />
+
+            For any additional questions about our delivery service, feel free
+            to contact us at [support@fastfoodonlineshop.com] or call
+            [+123-456-7890]. Thank you for choosing [Fast Food Online Shop] –
+            we’re excited to serve you!
+          </p>
+        </div>
+      </section>
+
+      <!--Footer section -->
+
+      <footer class="section-p1">
+        <div class="col">
+          <a href="index.html"
+            ><img src="images/logo.png" class="logo" alt="logo"
+          /></a>
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> United Kingdom London</p>
+          <p><strong>Phone:</strong> +447424242793</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00 Mon-Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://pinterest.com/"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About us</h4>
+          <a href="aboutus.html">About us</a>
+          <a href="delivery.html">Delivery Information</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div class="col">
+          <h4>My account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My wishlist</a>
+          <a href="#">Track my Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Download our App</h4>
+          <p>From AppStore or Google PlayStore</p>
+          <div class="row">
+            <img src="images/app.jpg" alt="" />
+            <img src="images/play.jpg" alt="" />
+          </div>
+          <p>Secured payment gateways</p>
+          <img src="assets/pay.png" alt="" />
+        </div>
+        <div class="copyright">
+          <p>Copyright © | 2024, EuropXpress</p>
+        </div>
+      </footer>
+    </main>
+    <!--=================      SWIPERJS SCRIPT    ==============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=================      CUSTOM JS     ==============-->
+    <script src="script.js"></script>
+  </body>
+</html>
