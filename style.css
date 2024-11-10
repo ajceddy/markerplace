@@ -1095,14 +1095,6 @@ footer .copyright {
   margin: 20px;
   padding: 10px;
 }
-.register input {
-  align-items: center;
-}
-
-.login #username,
-.login #password {
-  width: 30vh;
-}
 
 .login a {
   text-decoration: none;
