@@ -88,49 +88,63 @@
 
     <!--Main section-->
     <main class="main">
-      <!--Newsletter section-->
-      <section id="newsletters" class="section-p1 section-m1">
-        <div class="newstext">
-          <h4>Sign up for newsletters</h4>
-          <p>
-            Get E-mail updates about out latest shop and
-            <span>special offers</span>
-          </p>
-        </div>
-
-        <div class="form">
-          <input type="text" placeholder="Your E-mail address" />
-          <button class="normal">Sign up</button>
-        </div>
-      </section>
-
-      <!--about us section-->
+      <!--Login section -->
       <section class="login-page">
-        <form action="contact.html" autocomplete="off">
-          <p>You already have an account:</p>
-          <h3 class="title">Log in</h3>
+        <form class="login" action="#" autocomplete="off">
+          <h1>Login:</h1>
+          <p>Select how you want to log in: Username, Email or phone?</p>
+          <div class="username">
+            <div class="input-container username-container">
+              <input type="text" name="name" class="input" id="username" />
+              <label for="username">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container password">
+              <input type="password" name="name" class="input" id="password" />
+              <label for="password">Password</label>
+              <span>Password</span>
+            </div>
+            <input type="submit" value="Sign In" class="btn" />
+          </div>
+          <p>Forgot your password? <a href="#"> Click here to reset.</a></p>
+        </form>
 
-          <div class="input-container">
-            <input type="text" name="name" class="input username" />
-            <label for="">Username</label>
+        <form class="register" action="#" autocomplete="off">
+          <h1>Sign Up:</h1>
+          <p>Fill the form !</p>
+
+          <div class="input-container firstname">
+            <input type="text" name="firstname" class="input" />
+            <label for="firstname">First name</label>
+            <span>First name</span>
+          </div>
+          <div class="input-container lastname">
+            <input type="text" name="lastname" class="input" />
+            <label for="lastname">Last name</label>
+            <span>Last name</span>
+          </div>
+
+          <div class="input-container username">
+            <input type="text" name="username" class="input" />
+            <label for="username">Username</label>
             <span>Username</span>
           </div>
-          <div class="input-container">
-            <input type="email" name="email" class="input" />
-            <label for="">Email</label>
-            <span>Email</span>
+          <div class="input-container password">
+            <input type="password" name="name" class="input" />
+            <label for="password">Password</label>
+            <span>Username</span>
           </div>
-          <div class="input-container">
-            <input type="tel" name="phone" class="input" />
-            <label for="">Phone</label>
-            <span>Phone</span>
+          <div class="input-container confirm-password">
+            <input
+              type="password"
+              name="name"
+              class="input"
+              id="confirm-password"
+            />
+            <label for="confirm-password">Confirm password</label>
+            <span>Confirm password</span>
           </div>
-          <div class="input-container textarea">
-            <textarea name="message" class="input"></textarea>
-            <label for="">Message</label>
-            <span>Message</span>
-          </div>
-          <input type="submit" value="Send" class="btn" />
+          <input type="submit" value="Sign up" class="btn" />
         </form>
       </section>
 
