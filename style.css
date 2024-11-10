@@ -688,7 +688,7 @@ textarea.input {
     display: none;
   }
   .search .search-container #search-bar {
-    width: 50vh;
+    width: 25vh;
   }
 }
 /***************************search bar responsive*****/
