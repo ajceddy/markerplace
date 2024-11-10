@@ -688,7 +688,7 @@ textarea.input {
     display: none;
   }
   .search .search-container #search-bar {
-    width: 25vh;
+    width: 30vh;
   }
 }
 /***************************search bar responsive*****/
@@ -1082,4 +1082,29 @@ footer .copyright {
   padding: 2rem;
   background-color: #088178;
   overflow: hidden;
+}
+
+/*****************************************/
+/*********login page ********/
+
+.login-page {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #088178;
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+}
+.register input {
+  align-items: center;
+}
+
+.login #username,
+.login #password {
+  width: 30vh;
+}
+
+.login a {
+  text-decoration: none;
+  color: var(--accent-color);
 }
