@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #088178;
-  --decent-color: #d6e8bd;
+  --decent-color: darkgreen;
   --accent-color: #fff;
   --secondary-color: rgb(70, 196, 70);
   --font-family: "Poppins", sans-seri;
@@ -40,7 +40,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  background: #c6efed;
+  background: #088178;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
@@ -62,6 +62,7 @@ main {
   justify-content: space-between;
   position: relative;
   text-decoration: none;
+  flex-wrap: nowrap;
 }
 #navbar li {
   list-style: none;
@@ -73,11 +74,11 @@ main {
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #fff;
   transition: 0.3s ease;
 }
 #lg-login {
-  color: #088178;
+  color: #fff;
 }
 .fa-cart-shopping {
   font-size: 20px;
@@ -87,7 +88,7 @@ main {
 }
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: #fff;
 }
 
 #navbar li a.active::after,
@@ -95,7 +96,7 @@ main {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: #fff;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -117,36 +118,34 @@ main {
 /*****************************************************/
 
 .logo {
-  width: 80px;
-  height: 80px;
-  margin-right: 60px;
+  width: 128px;
+  height: 40px;
+  margin-right: 10px;
   margin-left: 0;
   margin-top: 10px;
 }
+
 .burger--icon i {
   padding: 10px;
-  background-color: var(--primary-color);
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
   border-radius: 5px;
   cursor: pointer;
 }
-.search--box {
-  width: 60%;
-  background: var(--accent-color);
-  border-radius: 10px;
-  flex: 1;
-  align-items: center;
-  padding: 0 1rem;
+
+/****/
+/***********************search input *****/
+.search .search-container #search-bar {
+  width: 30vh;
 }
-.search--box i {
-  color: var(--primary-color);
+.search .search-container {
+  width: 100%;
 }
-.search--box input {
-  background: transparent;
-  padding: 10px;
-  width: 30%;
+.search {
+  width: 40vh;
 }
-.menu--icons {
+
+.search .search-container .menu--icons {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -155,14 +154,19 @@ main {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  background: var(--decent-color);
+  background: var(--accent-color);
 }
 .fa-cart-shopping {
   background: transparent !important;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
+
+.fa-user-plus {
+  color: var(--accent-color);
+}
+
 .cart-icon {
   position: relative;
   width: 25px;
@@ -683,7 +687,11 @@ textarea.input {
   .burger--icon {
     display: none;
   }
+  .search .search-container #search-bar {
+    width: 50vh;
+  }
 }
+/***************************search bar responsive*****/
 
 @media (max-width: 850px) {
   /**************************    HAMBURGER MENU   ************************************/
@@ -705,6 +713,13 @@ textarea.input {
     margin-right: 10px;
     margin-top: 5px;
   }
+
+  /***************************search bar responsive*****/
+
+  .search .search-container #search-bar {
+    width: 30vh;
+  }
+
   .section-p1 {
     padding: 40px 40px;
   }
@@ -787,6 +802,14 @@ textarea.input {
   .form {
     grid-template-columns: 1fr;
   }
+  .aboutus .card {
+    width: 80%;
+    height: auto;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -796,9 +819,15 @@ textarea.input {
   header .logo {
     display: none;
   }
-  #serach-bar input {
-    width: 90%;
+
+  /***************************search bar responsive*****/
+
+  .search .search-container #search-bar {
+    width: 20vh;
   }
+
+  /****************overlay******/
+
   .cover--overlay h1 {
     font-size: 2rem;
   }
@@ -867,6 +896,16 @@ textarea.input {
   #newsletters .form {
     display: flex;
     width: 70%;
+  }
+
+  /***************************************About us page responsive********************/
+  .aboutus .card {
+    width: 80%;
+    height: auto;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -942,8 +981,8 @@ footer .col {
 }
 footer .logo {
   margin-bottom: 15px;
-  width: 100px;
-  height: 100px;
+  width: 128px;
+  height: 40px;
 }
 footer h4 {
   font-size: 14px;
@@ -1002,7 +1041,7 @@ footer .copyright {
   color: #088178;
 }
 .aboutus .card {
-  width: 30vw;
+  width: 300px;
   border: 0px solid;
   margin: 20px 0px;
   padding: 20px;
@@ -1014,7 +1053,7 @@ footer .copyright {
   padding-top: 10px;
 }
 .aboutus .card:hover {
-  box-shadow: 0px 10px 10px var(--primary-color);
+  box-shadow: 0px 10px 10px #373b3b;
 }
 .privacy {
   padding-bottom: 30px;
@@ -1030,4 +1069,17 @@ footer .copyright {
 .delivery h3 {
   margin: 15px 10px;
   padding: 10px;
+}
+
+/**********    login page ***************/
+
+.form {
+  background-color: #ffffff;
+}
+.contact-form {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #088178;
+  overflow: hidden;
 }
