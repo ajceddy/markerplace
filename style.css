@@ -688,7 +688,7 @@ textarea.input {
     display: none;
   }
   .search .search-container #search-bar {
-    width: 30vh;
+    width: 25vh;
   }
 }
 /***************************search bar responsive*****/
@@ -738,6 +738,8 @@ textarea.input {
     padding: 80px 0 0 14px;
     transition: 0.3s ease;
   }
+
+  /**************    HAMBURGER *********************/
 
   #navbar.active {
     right: 0;
