@@ -1100,3 +1100,9 @@ footer .copyright {
   text-decoration: none;
   color: var(--accent-color);
 }
+
+/*****************************SIGN UP PAGE*****************************/
+
+.register {
+  background-color: #088178;
+}
